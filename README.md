@@ -1,3 +1,4 @@
+
 # Campo
 
 Campo is a lightweight forum application, base on Ruby on Rails.
