@@ -10,6 +10,7 @@ class ApplicationController < ActionController::Base
   private
 
   class AccessDenied < Exception; end
+  
 
   def login_required
     unless login?
