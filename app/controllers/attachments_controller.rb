@@ -7,3 +7,4 @@ class AttachmentsController < ApplicationController
     render json: { url: @attachment.file.url }
   end
 end
+
