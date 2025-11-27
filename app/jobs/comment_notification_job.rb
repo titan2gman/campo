@@ -28,6 +28,7 @@ class CommentNotificationJob
 
   def self.create_comment_notification(comment)
     if comment.commentable.respond_to? :subscribed_users
+      
       users = comment.commentable.subscribed_users - comment.mention_users - [comment.user]
 
       users.each do |user|
